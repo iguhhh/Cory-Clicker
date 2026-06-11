@@ -123,9 +123,9 @@ setInterval(function(){
         }
 
         if (trabalhador == 0){
-            $("#yipee").html("");
+            $("#salario").html("");
         }else {
-            $("#yipee").html("O salário dos seus trabalhadores é " + paycheck +"$");
+            $("#salario").html("O salário dos seus trabalhadores é " + paycheck +"$");
         }
         if (ashtar == 0){
             $("#army").html("");
