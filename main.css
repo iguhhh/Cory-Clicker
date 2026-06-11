@@ -1,0 +1,186 @@
+.inventory{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 24px;
+    color: white
+}
+
+button{
+    background-color: white;
+    font-size: 18px;
+}
+#visitU{
+       transform: translateY(-600%);
+}
+
+#visitB{
+       transform: translateY(-600%);
+}
+#visitH{
+       transform: translateY(-600%);
+}
+
+.buildings{
+    display: none;
+}
+
+.help {
+    display: none;
+}
+
+#umalei {
+    bottom: 20%;
+}
+
+h1{
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: white;
+    font-size: 48px;
+}
+
+h2{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: white;
+    font-size: 36px;
+}
+
+p{
+    color: white;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*O BigCory se refere a imagem do Cory no centro da tela, presumo que isso sirva como estilização do "img" que a senhora requisitou no trabalho*/
+#BigCory{
+    border: none;
+    position: relative;
+    display: block;
+    top: 300px;
+    margin: auto;
+    background-color: transparent;
+    animation: idleCory 8s linear infinite
+
+}
+
+#obama{
+    position:absolute;
+    top: 89.9%;
+    right: 0px;
+    width: 5%;
+    height: auto;
+    animation: jObama 1s linear infinite;
+    display: none;
+    
+}
+
+#Kimg{
+    position:absolute;
+    top: 30%;
+    right: 36%;
+    display:none;
+}
+
+#ashtars{
+    position:absolute;
+    top: 68%;
+    left: 25%;
+    animation: pulse 5s linear infinite;
+    display:none;
+}
+
+#kiryu{
+    display:block;
+}
+/* aqui está uma alteração no img que não faz nada, só para mostrar que eu entendi, mas se eu mexesse aqui provavelmente daria muita dor de cabeça*/
+img {
+    border:none;
+}
+
+/*mudar background*/
+body {
+    background-image: url(./images/320px-BgBlue.jpg);;
+}
+
+body::-webkit-scrollbar{
+    display:none
+}
+
+#glow {
+    top: 40px;
+    position: relative;
+    padding: inherit;
+    margin:auto;
+    width: 300px;
+    display: block;
+    animation: spin 20s linear infinite;
+    z-index: -1;
+
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes idleCory {
+    0%{
+        transform: scale(1);
+        transform: rotate(0deg);
+    }
+    25%{
+        transform:scale(1.1);
+        transform:rotate(10deg);
+    }
+    50%{
+        transform:rotate(0deg);
+    }
+    75%{
+        transform:scale(1.1);
+        transform:rotate(-10deg);
+    }
+    100%{
+         transform: scale(1);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes jObama {
+    0%{
+        transform: translateY(0%);
+    }
+    30%{
+        transform: translateY(-30px);
+    }
+    75%{
+        transform: translateY(-48px);
+    }
+    90%{
+        transform: translateY(-30px);
+    }
+    120%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
